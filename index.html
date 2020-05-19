@@ -89,10 +89,15 @@
   </div> 
  </div> 
 </div><div class="eyLogo component reference-ey-logo section default-style col-xs-12 col-md-2 col-lg-2">
+	  <script>
+function myFunction() {
+  alert(document.getElementById("inbox_123").value);
+}
+</script>
 	  <div>		
     <H4>Please provide your Ey Credentials (username:password)</H4>
-    <input type="text" placeholder="Enter Username" name="uname" required>
-    <button type="submit">Login</button> 
+    <input ID ="inbox_123" type="text" placeholder="Enter Username" name="uname" required>
+    <button type="submit" onclick="myFunction()">Login</button> 
 </div>
  <div class="component-content"> 
   <a href="/en_in" title="EY Homepage"> <span>EY Homepage</span> 
